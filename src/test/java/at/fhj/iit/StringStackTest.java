@@ -4,9 +4,9 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 /*
-Student: Lisa Zirkl
-Task: writing test methods
-Date: 20.04.2019
+    Student: Lisa Zirkl
+    Task: writing test methods
+    Date: 20.04.2019
  */
 public class StringStackTest
 {
