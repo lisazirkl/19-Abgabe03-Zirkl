@@ -3,7 +3,11 @@ import static org.junit.Assert.*;
 
 import org.junit.Before;
 import org.junit.Test;
-
+/*
+Student: Lisa Zirkl
+Task: writing test methods
+Date: 20.04.2019
+ */
 public class StringStackTest
 {
     public Stack s;
@@ -58,6 +62,10 @@ public class StringStackTest
         s.pop();
         assertTrue(s.isEmpty());
     }
+    /*
+        This method tests if it throws an exception if
+        you pop more Elements than pushed.
+     */
     @Test (expected=IllegalStateException.class)
     public void testPopTooMany() throws Exception
     {
@@ -65,11 +73,19 @@ public class StringStackTest
         s.pop();
         s.pop();
     }
+    /*
+      This method tests throws exception
+      if you initialize StringStack with arguments <= 0
+   */
     @Test (expected=IllegalArgumentException.class)
     public void testStackCapacity() throws Exception
     {
         s = new StringStack(-2);
     }
+    /*
+        This method tests if it throws exception
+        if you push more elements than the stack was initialized with
+     */
     @Test (expected=IllegalStateException.class)
     public void testStackOverloaded() throws Exception
     {
