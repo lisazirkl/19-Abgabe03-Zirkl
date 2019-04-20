@@ -59,14 +59,14 @@ public class StringStackTest
         assertTrue(s.isEmpty());
     }
     @Test (expected=IllegalStateException.class)
-    public void testPop() throws Exception
+    public void testPopTooMany() throws Exception
     {
         s.push("hallo");
         s.pop();
         s.pop();
     }
-    @Test (expected=IllegalArgumentException.class)
-    public void testStackParam
+
+
 
     /**
      * Feel Free to insert other test cases for the String Stack Implementation !!!
