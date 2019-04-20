@@ -35,8 +35,8 @@ public class StringStackTest
     @Test
     public void testIsNotEmpty() throws Exception
     {
-      //  s.push("hallo");
-      //  assertFalse(s.isEmpty());
+          s.push("hallo");
+          assertFalse(s.isEmpty());
     }
 
     /**
