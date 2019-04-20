@@ -70,6 +70,16 @@ public class StringStackTest
     {
         s = new StringStack(-2);
     }
+    @Test (expected=IllegalStateException.class)
+    public void testStackOverloaded() throws Exception
+    {
+        s.push("hallo");
+        s.push("hey");
+        s.push("bye");
+        s.push("good morning");
+        s.push("hi");
+        s.push("goodbye");
+    }
 
 
 
