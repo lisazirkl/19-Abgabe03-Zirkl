@@ -65,6 +65,11 @@ public class StringStackTest
         s.pop();
         s.pop();
     }
+    @Test (expected=IllegalArgumentException.class)
+    public void testStackCapacity() throws Exception
+    {
+        s = new StringStack(-2);
+    }
 
 
 
