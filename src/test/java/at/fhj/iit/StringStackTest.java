@@ -23,7 +23,7 @@ public class StringStackTest
     @Test
     public void testIsEmpty() throws Exception
     {
-      //  assertTrue(s.isEmpty());
+        assertTrue(s.isEmpty());
     }
     
     /**
